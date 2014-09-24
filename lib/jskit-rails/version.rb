@@ -1,3 +1,3 @@
-module JskitRails
-  VERSION = "0.0.1"
+module JSKitRails
+  VERSION = "0.0.2"
 end

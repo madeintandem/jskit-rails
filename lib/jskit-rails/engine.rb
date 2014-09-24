@@ -1,5 +1,5 @@
-module JskitRails
+module JSKitRails
   class Engine < ::Rails::Engine
-    isolate_namespace JskitRails
+    isolate_namespace JSKitRails
   end
 end

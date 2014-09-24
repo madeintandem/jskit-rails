@@ -1,4 +1,4 @@
 # desc "Explaining what the task does"
-# task :jskit_rails do
+# task :jskit do
 #   # Task goes here
 # end

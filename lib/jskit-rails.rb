@@ -1,4 +1,4 @@
-require "jskit_rails/engine"
+require "jskit-rails/engine"
 
-module JskitRails
+module JSKitRails
 end
