@@ -1,4 +1,4 @@
-module JSKitRails
+module JSKit
   module Payload
     mattr_accessor :value
 

@@ -1,10 +1,10 @@
 require "rails_helper"
 
-describe JSKitRails::ApplicationHelper do
+describe JSKit::ApplicationHelper do
   describe "jskit" do
     before do
       allow(ActionController::Metal).to receive(:controller_name).and_return("test_controller")
-      module JSKitRails::ApplicationHelper
+      module JSKit::ApplicationHelper
         def action_name
           "test_action"
         end
@@ -16,14 +16,14 @@ describe JSKitRails::ApplicationHelper do
     end
 
     it "returns a script tag with the json payload" do
-      JSKitRails::Payload.value = ["foo", "bar", 0]
+      JSKit::Payload.value = ["foo", "bar", 0]
       expect(helper.jskit).to include('App.Dispatcher.trigger("controller:test_controller:test_action", "foo", "bar", 0);')
     end
 
     it "resets the json payload" do
-      JSKitRails::Payload.value = ["foo", "bar", 0]
+      JSKit::Payload.value = ["foo", "bar", 0]
       helper.jskit
-      expect(JSKitRails::Payload.value).to be_nil
+      expect(JSKit::Payload.value).to be_nil
     end
 
     it "accepts a namespace configuration" do

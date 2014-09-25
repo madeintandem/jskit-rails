@@ -2,9 +2,9 @@
   require "jskit_rails/#{lib}"
 end
 
-module JSKitRails
+module JSKit
   def set_payload(*payload)
-    JSKitRails::Payload.value = payload
+    JSKit::Payload.value = payload
   end
 
   module_function :set_payload

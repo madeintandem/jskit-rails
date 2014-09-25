@@ -1,7 +1,7 @@
-JSKitRails
-==========
+jskit-rails
+===========
 
-JSKitRails is a gem that let's you seamlessly integrate rails with [JSKit](https://github.com/daytonn/jskit).
+jskit-rails is a gem that let's you seamlessly integrate rails with [JSKit](https://github.com/daytonn/jskit).
 
 Installation
 ------------
@@ -35,7 +35,7 @@ If you wish to pass data to the event handler, simply set the payload from the c
 ```rb
 class PagesController < ApplicationController
   def index
-    JSKitRails.set_payload("foo", [1, 2, 3], { some: "object" })
+    JSKit.set_payload("foo", [1, 2, 3], { some: "object" })
   end
 end
 ```

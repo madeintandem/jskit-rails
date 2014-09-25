@@ -6,7 +6,7 @@ require "jskit_rails/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "jskit-rails"
-  s.version     = JSKitRails::VERSION
+  s.version     = JSKit::VERSION
   s.authors     = ["Dayton Nolan"]
   s.email       = ["daytonn@gmail.com"]
   s.homepage    = "https://github.com/daytonn/jskit-rails"
