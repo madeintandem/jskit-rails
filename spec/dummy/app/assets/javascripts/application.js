@@ -10,7 +10,12 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jskit
-//= require_self
+//= require jskit-rails
 
-var App = JSKit.createApplication();
+App.createController("Pages", {
+  actions: ['index'],
+
+  index: function(data) {
+    console.log(arguments);
+  }
+});

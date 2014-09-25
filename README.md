@@ -18,10 +18,16 @@ Bundle it up:
 bundle install
 ```
 
-Add the `jskit` helper to your application layout:
+Add the `jskit` helper to your layout (i.e. `app/views/layouts/application.html.erb`):
 
 ```html
 <%= jskit %>
+```
+
+Add the jskit javascript (i.e. `app/assets/javascripts/application.js`):
+
+```js
+//= require jskit-rails
 ```
 
 That's it, now all controller actions will be triggered on the `JSKit` dispatcher. For example, assume a `PagesController` with an `index` action. When we visit the `pages#index` page the `jskit` helper will trigger the appropriate event:

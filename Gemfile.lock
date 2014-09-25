@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jskit-rails (0.0.2)
+    jskit-rails (1.0.0)
       rails (~> 4.1)
 
 GEM
@@ -117,9 +117,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fuubar
+  fuubar (~> 2.0)
   jskit-rails!
-  pry
-  pry-nav
-  rspec-rails
-  sqlite3
+  pry (~> 0.10)
+  pry-nav (~> 0.2)
+  rspec-rails (~> 3.1)
+  sqlite3 (~> 1.3)
