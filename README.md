@@ -51,3 +51,5 @@ Everything passed to `set_payload` will be converted to json for you (via `to_js
 ```js
 App.Dispatcher.trigger("controller:pages:index", "foo", [1, 2, 3], { "some": "object" });
 ```
+
+Here is an example application using `jskit-rails`: [jskit-rails-example](https://github.com/daytonn/jskit-rails-example)
