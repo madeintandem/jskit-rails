@@ -30,7 +30,7 @@ Add the jskit javascript (i.e. `app/assets/javascripts/application.js`):
 //= require jskit-rails
 ```
 
-That's it, now all controller actions will be triggered on the `JSKit` dispatcher. For example, assume a `PagesController` with an `index` action. When we visit the `pages#index` page the `jskit` helper will trigger the appropriate event:
+That's it, now all controller actions will be triggered on the `JSKit` dispatcher. For example, assume you have a `PagesController` with an `index` action. When we visit the `pages#index` page the `jskit` helper will trigger the appropriate event:
 
 ```js
 App.Dispatcher.trigger("controller:pages:index");
