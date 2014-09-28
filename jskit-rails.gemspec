@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.description = "jsit-rails provides jskit.js to the asset pipeline and allows seamless event dispatching from your rails application to jskit."
   s.license     = "Apache 2.0"
 
-  s.files = Dir["lib/**/*", "LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["lib/**/*", "app/**/*", "LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["spec/**/*_spec.rb"]
 
   s.add_dependency "rails", "~> 4.1"

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jskit-rails (1.0.0)
+    jskit-rails (1.0.1)
       rails (~> 4.1)
 
 GEM
