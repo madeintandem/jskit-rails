@@ -1,5 +1,5 @@
 %w(config payload application_helper engine).each do |lib|
-  require "jskit_rails/#{lib}"
+  require "jskit-rails/#{lib}"
 end
 
 module JSKit
